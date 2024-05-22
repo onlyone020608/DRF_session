@@ -1,0 +1,180 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1250px;
+  height: 100%;
+  position: absolute;
+  background-color: #ebeae9;
+  margin: 10px;
+  padding: 30px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  /* font-family: "Rubik Scribble"; */
+  /* font-family: "Homemade Apple"; */
+  font-family: "Vidaloka";
+  /* font-family: "Meddon"; */
+  /* font-family: "Yeseva One"; */
+  padding-top: 10px;
+}
+
+.header {
+  display: flex;
+  /* background-color: red; */
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.favorite2 {
+  font-size: 50px;
+  font-family: "Playfair Display";
+  margin-bottom: 20px;
+}
+img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  margin-right: 2px;
+}
+
+.wrapper {
+  padding: 20px;
+  margin-top: 80px;
+}
+
+.slider {
+  display: flex;
+  overflow: scroll;
+  overflow: auto;
+  white-space: nowrap;
+  background-color: #ebeae9;
+  margin-top: 10px;
+}
+
+/* .slider::-webkit-scrollbar {
+  display: none;
+} */
+::-webkit-scrollbar {
+  width: 3px; /* 세로축 스크롤바 폭 너비 */
+  height: 10px; /* 가로축 스크롤바 폭 너비 */
+}
+
+.slider::-webkit-scrollbar-track {
+  background: #ebeae9;
+}
+
+.slider::-webkit-scrollbar-thumb {
+  background: #aea79b;
+  border-radius: 10px;
+}
+
+.whitelove {
+  font-size: 60px;
+  font-family: "Playfair Display";
+  margin-right: 50px;
+}
+
+.fav {
+  margin-top: -40px;
+  margin-left: 20px;
+}
+
+.bottom {
+  display: flex;
+  margin-top: 120px;
+}
+
+.song img {
+  width: 130px;
+  height: 130px;
+  /* border-radius: 10px; */
+}
+
+.song {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(174, 167, 155, 0.1);
+  border-radius: 10px;
+  margin-right: 20px;
+  width: 200px;
+  height: 240px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-top: 30px;
+  box-shadow: 4px 3px 40px -10px rgba(128, 128, 128, 0.9);
+  -webkit-box-shadow: 4px 3px 40px -10px rgba(128, 128, 128, 0.9);
+  -moz-box-shadow: 4px 3px 40px -10px rgba(128, 128, 128, 0.9);
+}
+
+.song-detail {
+  margin-left: 20px;
+  /* background-color: azure; */
+  margin-top: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.playlist {
+  display: flex;
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  justify-content: space-between;
+  padding: 20px;
+  display: flex;
+  overflow: scroll;
+}
+
+.song-title {
+  font-size: 13px;
+  font-family: "DM Serif Text", "Noto Sans Korean";
+  font-weight: bold;
+}
+
+.singer {
+  font-size: 12px;
+  color: gray;
+  margin-top: 10px;
+}
+
+.playlist-wrapper {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+/* .playlist::-webkit-scrollbar-track {
+  background: #ebeae9;
+}
+
+.playlist::-webkit-scrollbar-thumb {
+  background: #aea79b;
+  border-radius: 10px;
+} */
+.navigation_item {
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+  border-radius: 5px;
+  height: 20px;
+  width: 80px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.navigation_item:hover {
+  background: #dde1e7;
+}
+
+.navigation_item:active {
+  background: #dde1e7;
+  box-shadow: inset -3px -3px 7px #ffffff73,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+  border-radius: 5px;
+}

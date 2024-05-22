@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>MyPage</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&family=Asset&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Climate+Crisis&family=Covered+By+Your+Grace&family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Gowun+Batang&family=Gravitas+One&family=Homemade+Apple&family=IBM+Plex+Sans+KR&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Imbue:opsz,wght@10..100,100..900&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Italiana&family=La+Belle+Aurore&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Libre+Caslon+Display&family=Licorice&family=Lilita+One&family=Londrina+Outline&family=Lora:ital,wght@0,400..700;1,400..700&family=Meddon&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Miltonian+Tattoo&family=Moirai+One&family=Notable&family=Nothing+You+Could+Do&family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Noto+Serif+KR&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;600&family=Reenie+Beanie&family=Rubik+Scribble&family=Rubik:ital,wght@0,300..900;1,300..900&family=Shadows+Into+Light&family=Tilt+Warp&family=Viaoda+Libre&family=Vidaloka&family=Yeseva+One&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="title">onlyone</div>
+    <div class="header">
+      <div class="navigation_item" onclick="location.href='index.html'">
+        Home
+      </div>
+      <div
+        class="navigation_item"
+        onclick="location.href='favorite.html'"
+        id="fav"
+      >
+        Mine
+      </div>
+      <div class="navigation_item" onclick="location.href='more.html'">
+        more
+      </div>
+    </div>
+    <div class="wrappeer-body">
+      <div class="profile-wrapper">
+        <img src="./images/myroom_mirror.jpg" />
+        <div class="contents">
+          <div class="myname">HyeWon</div>
+          <div class="major">
+            Global Business & Technology학부 / AI융합전공(Software&AI)
+          </div>
+          <div class="sns">
+            <div class="sns_icon">
+              <img onclick="goinsta()" src="./images/insta.png" />
+              <div class="link" onclick="goinsta()">@0neonly</div>
+            </div>
+            <div class="sns_icon" id="blog">
+              <img onclick="goblog()" src="./images/blog.png" />
+              <div class="link">blog.naver.com/onlyone0608_</div>
+            </div>
+          </div>
+          <div class="languages">
+            <div class="language">
+              <div class="lang_title">Language</div>
+              <div class="langs">
+                <div class="lang">Korean</div>
+                <div class="lang">English</div>
+                <div class="lang">Chinese</div>
+                <div class="lang">Japanese</div>
+              </div>
+            </div>
+            <div class="computerLang">
+              <span class="sub_info_title">Computer Language</span>
+              <div class="com_icons">
+                <img id="java" src="./images/java-original-wordmark.svg" />
+                <img src="./images/javascript-js.svg" />
+                <img src="./images/python.svg" />
+              </div>
+            </div>
+          </div>
+          <span class="sub_info_title">Skills</span>
+          <div class="skills-wrapper">
+            <div class="skills">
+              <div class="skill">
+                <div class="sName">HTML/CSS</div>
+                <div class="lines">
+                  <div class="ori"></div>
+                  <div class="progress1"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="sName">React-native</div>
+                <div class="lines">
+                  <div class="ori"></div>
+                  <div class="progress1"></div>
+                </div>
+              </div>
+            </div>
+            <div class="skills">
+              <div class="skill">
+                <div class="sName">Express</div>
+                <div class="lines">
+                  <div class="ori"></div>
+                  <div class="progress1"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="sName">Django</div>
+                <div class="lines" id="jango">
+                  <div class="ori"></div>
+                  <div class="progress2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="body-bottom">
+        <div class="likeit">
+          <button
+            onclick="likeup()"
+            aria-label="heart"
+            data-ico="❤️"
+            style="--hue: 200deg"
+          ></button>
+          <div class="likeNum">
+            <div id="num">0</div>
+            likes
+          </div>
+        </div>
+        <div class="birth">
+          <div class="age">
+            <img id="baby" src="./images/baby1.jpg" />
+            <div class="birthday">
+              <span>MY</span>
+              <span class="pink">BIRTH</span><span class="pink">DAY</span>
+            </div>
+          </div>
+          <div class="date">
+            <span id="year" class="pink">2002</span>
+            <span id="month">06</span>
+            <span id="day">08</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
